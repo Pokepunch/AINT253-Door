@@ -1,23 +1,39 @@
 fileFormatVersion: 2
 guid: 13ae21d49e6cf40428c75429a0886e2c
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     100002: Box001
     100004: Box002
+    100006: Box003
+    100008: Bolt
+    100010: Handle
     400000: //RootNode
     400002: Box001
     400004: Box002
+    400006: Box003
+    400008: Bolt
+    400010: Handle
     2100000: No Name
     2300000: //RootNode
     2300002: Box001
     2300004: Box002
+    2300006: Box003
+    2300008: Bolt
+    2300010: Handle
     3300000: //RootNode
     3300002: Box001
     3300004: Box002
+    3300006: Box003
+    3300008: Bolt
+    3300010: Handle
     4300000: Box001
     4300002: Box002
+    4300004: Box003
+    4300006: Door
+    4300008: Handle
+    4300010: Bolt
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -69,6 +85,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

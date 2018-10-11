@@ -1,25 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour {
 
-    public CharacterController controller;
-    public float speed;
+    public float activateDistance = 5;
 
-	// Use this for initialization
-	void Start ()
+    Camera main;
+
+    private void Start()
     {
+        main = Camera.main;
+    }
 
-	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    private void Update()
     {
-        // Get the players movement for this frame
-        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        controller.SimpleMove(movement * speed);
+        RaycastHit hit;
 
-        Vector2 view = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+        Ray fowardRay = new Ray(main.ViewportToWorldPoint(new Vector3(.5f, .5f, 0)), main.transform.forward);
+
+        if (CrossPlatformInputManager.GetButtonDown("Activate"))
+        {
+            if (Physics.Raycast(fowardRay, out hit, activateDistance))
+            {
+                hit.transform.gameObject.SendMessage("Activate", SendMessageOptions.DontRequireReceiver);
+                Debug.Log("hit " + hit.transform.gameObject.name);
+            }
+        }
     }
 }
