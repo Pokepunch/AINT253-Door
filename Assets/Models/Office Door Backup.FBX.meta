@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 1bf98da3c9197264399669be6039f137
 ModelImporter:
-  serializedVersion: 23
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: Bolt
     100002: Handle
@@ -10,6 +10,8 @@ ModelImporter:
     400002: Handle
     400004: //RootNode
     2100000: No Name
+    2100002: 'Material #85'
+    2100004: 'Material #97'
     2300000: Bolt
     2300002: Handle
     2300004: //RootNode
@@ -72,8 +74,6 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.0254
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
