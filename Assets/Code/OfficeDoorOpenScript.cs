@@ -4,23 +4,29 @@ using UnityEngine;
 
 public class OfficeDoorOpenScript : MonoBehaviour {
 
-    public Animation anim;
-    public bool isOpen;
+    private Animator anim;
+    private bool isClosed;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+        isClosed = anim.GetBool("IsClosed");
+    }
 
     public void Activate()
     {
-        if (!anim.isPlaying)
+        anim.SetBool("IsClosed", false);
+        /*
+        if (isClosed)
         {
-            if (!isOpen)
-            {
-                anim.Play("DoorOpen");
-                isOpen = true;
-            }
-            else
-            {
-                anim.Play("DoorClose");
-                isOpen = false;
-            }
+            anim.SetBool("IsClosed", false);
+            isClosed = false;
         }
+        else
+        {
+            anim.SetBool("IsClosed", true);
+            isClosed = true;
+        }
+        */
     }
 }
