@@ -9,33 +9,43 @@ ModelImporter:
     100006: Box003
     100008: Bolt
     100010: Handle
+    100012: Door
+    100014: Frame
     400000: //RootNode
     400002: Box001
     400004: Box002
     400006: Box003
     400008: Bolt
     400010: Handle
+    400012: Door
+    400014: Frame
     2100000: No Name
     2100002: 'Material #85'
     2100004: 'Material #97'
+    2100006: 'Material #165'
     2300000: //RootNode
     2300002: Box001
     2300004: Box002
     2300006: Box003
     2300008: Bolt
     2300010: Handle
+    2300012: Door
+    2300014: Frame
     3300000: //RootNode
     3300002: Box001
     3300004: Box002
     3300006: Box003
     3300008: Bolt
     3300010: Handle
+    3300012: Door
+    3300014: Frame
     4300000: Box001
     4300002: Box002
     4300004: Box003
     4300006: Door
     4300008: Handle
     4300010: Bolt
+    4300012: Frame
   externalObjects: {}
   materials:
     importMaterials: 1
